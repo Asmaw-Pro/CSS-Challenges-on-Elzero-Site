@@ -1,0 +1,12 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #787878;
+    margin: 200px auto;
+    box-shadow: 
+        51px -51px #7cbb00
+        , -51px 51px #00a1f1
+        , 51px 51px #ffbb00
+        , -51px -51px #f65314
+        , 0px 0px 0px 60px #c3c3c33b ;
+}
