@@ -1,0 +1,135 @@
+:root {
+    --green:#009688;
+    --red : #E91E63;
+    --blue: #2196F3;
+    --gray: #607d8b;
+}
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.profile {
+    width: 75%;
+    padding: 10px;
+    background-color: #eee;
+    margin: 20px auto;
+}
+.main-bio 
+,.points
+,.trophies
+,.ladder-news
+,.your-powers{
+    background-color: #fff;
+    padding: 10px;
+    margin: 30px;
+}
+.main-bio {
+    display: flex;
+}
+.right-side::after {
+    content: "";
+    height: 100%;
+    width: 2px;
+    background-color: #eee;
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+}
+.right-side{
+    position: relative;
+}
+.left-side  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.left-side , .right-side {
+    margin: 15px;
+}
+.caption {
+    font-size:12px;
+    padding-top: 10px;
+}
+progress {
+    height: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+progress::-webkit-progress-bar {
+    background: #eee;
+}
+progress::-webkit-progress-value {
+    background: var(--green);
+    transition: width 0.5s ease-in-out;
+}
+.photo {
+    width: 100px;
+    border-radius: 50%; 
+    border: 4px solid #ddd;
+}
+.name {
+    font-size:1.5em;
+    margin:0;
+}
+.bio {
+    font-weight: 100;
+}
+.period {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    color: gray;
+    margin: 0;
+}
+.trophies img{
+    width: 65px; 
+}
+.trophies .images {
+    padding-left: 10px ;
+}
+.level {
+    font-weight: 800;
+    padding: 5px;
+}
+.ladder-news p , .points p , h4{
+    margin-left: 10px;
+}
+h4 {
+    color: #ffffff;
+    background-color: var(--gray);
+    width: fit-content;
+    padding: 10px;
+}
+.not-won {
+    opacity: 0.1;
+}
+.points li {
+    padding:0;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 10px 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.16)
+}
+ul li:last-child {
+    border: none;
+}
+ul {
+    padding: 0;
+}
+.green-number , .Yes {
+    color: var(--green);
+    font-weight: 700;
+}
+.red-text , .No {
+    color: var(--red);
+    font-weight: 700;
+}
+.blue-text{
+    color: var(--blue);
+    font-weight: 700;    
+}
