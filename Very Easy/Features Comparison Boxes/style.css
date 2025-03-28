@@ -1,0 +1,135 @@
+:root {
+    --red: #f44336;
+    --blue: #2196f3;
+    --green: #009688;
+    --pink: #E91E63;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Cairo", sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    font-size: 0.7em;
+}
+.Save {
+    padding: 1px 13px;
+    height: fit-content;
+    background-color:var(--blue) ;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    text-wrap:nowrap;
+    margin-right: 9%;
+}
+.Save::after , .Save::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: var(--blue);
+    position: absolute;
+    left: 50%;
+    z-index: -1;
+}
+.Save::after {
+    transform: skewX(-40deg);
+}
+.Save::before {
+    transform: skewX(40deg);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Basic , .Professional {
+    background-color: #fff;
+    margin: 10px;
+    width: 300px;
+    border-radius: 10px 10px 0 0;
+}
+.header {
+    background-color: var(--red);
+    border-radius:10px 10px 0  0 ;
+    height: 40px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+}
+.Professional .header {
+    background-color: var(--blue);
+}
+ul li {
+    list-style: none;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.196);
+    padding: 5px 5px 5px 15px ;
+    position: relative;
+}
+li:last-child {
+    border: none;
+}
+ul {
+    padding: 10px;
+}
+.checkYes , .checkNo , .is{
+    width: 12px;
+    height: 12px;
+    display: inline;
+    background-color: var(--green);
+    position: absolute;
+    border-radius: 50% ;
+    transform: translateX(-20px);
+}
+.checkYes::before {
+    width: 5px;
+    height: 1.5px;
+    top: 5.5px;
+    left: 4.5px;
+    transform: rotate(-50deg);
+}
+.checkYes::after {
+    width: 3px;
+    height: 1.5px;
+    top: 5.9px;
+    left: 3.2px;
+    transform: rotate(40deg);
+}
+.checkYes::after , .checkYes::before , .checkNo::after , .checkNo::before {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+}
+.checkNo {
+    background-color: var(--pink);
+}
+.checkNo::after , .checkNo::before{
+    width: 7px;
+    height: 1.5px;
+    top: 5.5px;
+    left: 2.5px;
+    transform: rotate(-45deg);    
+}
+.checkNo::before {
+    transform: rotate(45deg);
+}
+.is {
+    top: 10px;
+    background-color: gray;
+    right: -20px;
+    color: #ffffff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
