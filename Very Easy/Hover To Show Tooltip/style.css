@@ -29,8 +29,8 @@ span::after
     position: absolute;
     opacity: 0;
     transition: 0.5s ease-in-out}
-span:hover:after 
-, span:hover:before {
+span:hover::after 
+, span:hover::before {
     opacity: 1;
 }
 
