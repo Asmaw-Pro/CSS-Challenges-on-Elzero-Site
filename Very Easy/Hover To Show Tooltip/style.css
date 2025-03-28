@@ -1,0 +1,36 @@
+span {
+    margin: 100px auto;
+    width: fit-content;
+    display: block;
+    position: relative;
+    padding: 15px 10px ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    background-color: red;
+    color: white;
+    text-wrap: nowrap;
+}
+span::after {
+    content: "";
+    top: -20px;
+    left: calc( 50% - 10px );
+    border: 10px solid transparent;
+    border-top-color: black;
+}
+span::before {
+    content: "this is tooltip content";
+    top: -120% ;
+    left: calc( 50% - 100px );
+    background-color: black;
+    padding: 10px 20px;
+}
+span::after 
+, span::before {
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s ease-in-out}
+span:hover:after 
+, span:hover:before {
+    opacity: 1;
+}
+
