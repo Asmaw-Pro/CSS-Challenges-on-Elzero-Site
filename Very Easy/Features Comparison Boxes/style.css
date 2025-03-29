@@ -21,13 +21,12 @@ body {
     height: fit-content;
     background-color:var(--blue) ;
     display: flex;
-    align-self: flex-end;
-    justify-content: center;
     align-items: center;
     color: #fff;
-    position: relative;
-    text-wrap:nowrap;
-    margin-right: 9%;
+    top: 0px;
+    right: -40px;
+    position: absolute;
+    margin-right: 10%;
 }
 .Save::after , .Save::before {
     content: "";
@@ -53,7 +52,7 @@ body {
 }
 .Basic , .Professional {
     background-color: #fff;
-    margin: 10px;
+    margin:  50px 10px 10px;
     width: 300px;
     border-radius: 10px 10px 0 0;
 }
@@ -89,7 +88,7 @@ ul {
     background-color: var(--green);
     position: absolute;
     border-radius: 50% ;
-    transform: translateX(-20px);
+    transform: translate(-18px , 5px);
 }
 .checkYes::before {
     width: 5px;
@@ -132,4 +131,6 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateX(-20px);
+
 }
